@@ -1,0 +1,19 @@
+.contact {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.contact-title {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.contact-refresh {
+  font-size: 80%;
+  margin-left: 10px;
+}
+
+.contact-header {
+  background: #ECECEC;
+  padding: 5px;
+}

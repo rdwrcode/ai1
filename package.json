@@ -2,12 +2,19 @@
   "name": "ai1",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://rdwrcode.github.io/ai1",
   "devDependencies": {
     "react-scripts": "0.6.1"
   },
   "dependencies": {
+    "bluebird": "^3.4.6",
+    "bootstrap": "^3.3.7",
+    "classnames": "^2.2.5",
+    "d3": "^4.2.8",
+    "github": "^5.2.2",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-http-request": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
