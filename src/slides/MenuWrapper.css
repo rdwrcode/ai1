@@ -1,0 +1,16 @@
+.menu {
+  display: block;
+  width: 250px;
+  height: 100%;
+  background-color: #273D7A;
+}
+
+.menu-item {
+  float:left;
+  width:100%;
+  margin:0;
+  padding:10px 15px;
+  border-bottom:solid 1px #555;
+  cursor:pointer;
+  color:#B0B0B0;
+}

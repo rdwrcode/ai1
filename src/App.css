@@ -22,3 +22,45 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.App-list {
+  list-style: none;
+}
+
+/* */
+.App-div {
+  overflow: hidden;
+}
+
+.App-p {
+  animation-duration: 3s;
+  animation-name: slidein;
+  /*
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  */
+}
+
+75% {
+  font-size: 300%;
+  margin-left: 25%;
+  width: 150%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
