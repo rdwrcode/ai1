@@ -1,19 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Match, Link } from 'react-router';
+
+import Home from './home/Home';
+import Tweet from './tweet/Tweet';
+import About from './about/About';
+import Menu from './menu/Menu';
+
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <BrowserRouter>
+        <div className="App">
+          <span className="App-span"><Link to="/menu"><i className="fa fa-bars fa-2x"/></Link></span>
+          {' '}
+          <span className="App-span"><Link to="/"><i className="fa fa-home fa-2x"/></Link></span>
+          {' '}
+          <span className="App-span"><Link to="/tweet" activeStyle={{ color: 'red' }}><i className="fa fa-twitter fa-2x"/></Link></span>
+          {' '}
+          <span className="App-span"><Link to="/about" activeStyle={{ color: 'red' }}><i className="fa fa-user fa-2x"/></Link></span>
+          {' '}
+          <span className="App-span"><i className="fa fa-search fa-2x"/></span>
+          <hr/>
+
+          <Match exactly pattern="/" component={Home} />
+          <Match pattern="/tweet" component={Tweet} />
+          <Match pattern="/about" component={About} />
+          <Match pattern="/menu" component={Menu} />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </BrowserRouter>
     );
   }
 }
