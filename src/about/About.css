@@ -1,0 +1,24 @@
+.about {
+  text-align: center;
+}
+
+.about-logo {
+  animation: about-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.about-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.about-intro {
+  font-size: large;
+}
+
+@keyframes about-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
