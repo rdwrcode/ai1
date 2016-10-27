@@ -3,13 +3,13 @@
 }
 
 .About-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: About-logo-spin infinite 20s linear;
   height: 80px;
 }
 
 .About-header {
   background-color: #222;
-  height: 150px;
+  height: 250px;
   padding: 20px;
   color: white;
 }
