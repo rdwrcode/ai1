@@ -6,6 +6,7 @@ import Tweet from './tweet/Tweet';
 import About from './about/About';
 import Menu from './menu/Menu';
 import Search from './search/Search';
+import Icons from './glyphs/Icons';
 
 import './App.css';
 
@@ -18,12 +19,14 @@ class App extends Component {
           <ActiveLink loc="/" cn="App-span" activecn="App-span-active" icon="fa fa-home fa-2x"/>
           <ActiveLink loc="/tweet" cn="App-span" activecn="App-span-active" icon="fa fa-twitter fa-2x"/>
           <ActiveLink loc="/about" cn="App-span" activecn="App-span-active" icon="fa fa-user fa-2x"/>
+          <ActiveLink loc="/icons" cn="App-span" activecn="App-span-active" icon="fa fa-ambulance fa-2x"/>
           <ActiveLink loc="/search" cn="App-span" activecn="App-span-active" icon="fa fa-search fa-2x"/>
           <hr color="gray"/>
           <Match pattern="/menu" component={Menu} />
           <Match exactly pattern="/" component={Home} />
           <Match pattern="/tweet" component={Tweet} />
           <Match pattern="/about" component={About} />
+          <Match pattern="/icons" component={Icons} />
           <Match pattern="/search" component={Search} />
         </div>
       </BrowserRouter>
